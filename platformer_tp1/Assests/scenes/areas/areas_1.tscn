@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=4 uid="uid://bw7ub8k7lmyd7"]
+[gd_scene load_steps=5 format=4 uid="uid://bw7ub8k7lmyd7"]
 
 [ext_resource type="Texture2D" uid="uid://xykblysn5a2l" path="res://Assests/sprites/tiles_1.png" id="1_da7ka"]
+[ext_resource type="PackedScene" uid="uid://bbsurxxwbgpcq" path="res://Assests/scenes/character_body_2d.tscn" id="2_s7uhu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0yndd"]
 texture = ExtResource("1_da7ka")
@@ -75,3 +76,5 @@ sources/0 = SubResource("TileSetAtlasSource_0yndd")
 use_parent_material = true
 tile_map_data = PackedByteArray("AAD8/wAAAAABAAAAAAD9/wAAAAABAAAAAAD+/wAAAAABAAAAAAD//wAAAAABAAAAAAAAAAAAAAABAAAAAAABAAAAAAABAAAAAAACAAAAAAABAAAAAAADAAAAAAABAAAAAAAEAAAAAAABAAAAAAAFAAAAAAABAAAAAAAGAAAAAAABAAAAAAAHAAAAAAABAAAAAAAJAAAAAAABAAAAAAAIAAAAAAABAAAAAAAFAP//AAADAAAAAAAGAP7/AAADAAAAAAAGAP//AAADAAEAAAAHAP3/AAADAAAAAAAHAP7/AAADAAEAAAAHAP//AAADAAIAAAA=")
 tile_set = SubResource("TileSet_fv805")
+
+[node name="jouer" parent="." instance=ExtResource("2_s7uhu")]
