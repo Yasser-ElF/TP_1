@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbsurxxwbgpcq"]
+
+[ext_resource type="Texture2D" uid="uid://iw8183tanyi5" path="res://Assests/sprites/player.png" id="1_i3roa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0pcpn"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="perso" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="perso"]
+root_node = NodePath("../..")
+
+[node name="Sprite2D" type="Sprite2D" parent="perso"]
+texture = ExtResource("1_i3roa")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_0pcpn")
